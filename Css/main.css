@@ -135,6 +135,8 @@ body{
     color: #43ce43;
     cursor: pointer;
 }
+.game-win-result .show-records.no-clicking{
+    pointer-events: none;
 .control-buttons{
     position: fixed;
     left: 0;
