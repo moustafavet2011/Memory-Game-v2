@@ -237,9 +237,10 @@ let recordSpan =document.createElement("span");
 recordSpan.className="records-span";
 recordsDiv.appendChild(recordSpan);
 showRecords.onclick = function(){
-    recordsDiv.classList.toggle("show");
+    recordsDiv.classList.add("show");
     for(let [key, value] of Object.entries(localStorage)){
         recordSpan.innerHTML += `<span class="span-name">${key}</span> <span class="span-value"> ${value} </span> <hr/>`;
+        showRecords.classList.add("no-clicking");
     }
 
 };
